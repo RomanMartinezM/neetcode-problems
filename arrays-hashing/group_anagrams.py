@@ -8,7 +8,7 @@ class Solution:
         groups = defaultdict(list)
 
         for s in strs:
-            sortedS = '',join(sorted(s))
+            sortedS = ''.join(sorted(s))
             groups[sortedS].append(s)
 
         return list(groups.values())
